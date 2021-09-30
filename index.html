@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
+    
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -26,23 +27,30 @@ html {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  text-align: center;
 }
 
 .about-section {
-  padding: 50px;
+  padding: 40px;
   text-align: center;
-  background-color: #474e5d;
+  /* background-color: #474e5d; */
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
   color: white;
 }
 
 .container {
   padding: 0 16px;
+ 
 }
 
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
+ 
 }
 
 .title {
@@ -59,10 +67,11 @@ html {
   text-align: center;
   cursor: pointer;
   width: 100%;
+  text-decoration: none;
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: green;
 }
 
 @media screen and (max-width: 650px) {
@@ -71,55 +80,72 @@ html {
     display: block;
   }
 }
+h1 {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    text-align: center;
+}
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+}
 </style>
 </head>
 <body>
-
+ 
+  <h1> VMH Entertainment</h1>
 <div class="about-section">
-  <h1>About Us Page</h1>
-  <p>Some text about who we are and what we do.</p>
-  <p>Resize the browser window to see that this page is responsive by the way.</p>
+  
+  <p>Welcome to this my webpage</p>
+  <p>This is webpage's VMH Entertainment.</p>
 </div>
-<iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
 
-<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
-<h2 style="text-align:center">Our Team</h2>
+<h2 style="text-align:center">App on Google Play Store</h2>
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="img/logo_amway.png" alt="Jane" style="width:100%">
+      <img src="img/logo_amway.png" alt="Jane" width="200" height="200" >
       <div class="container">
-        <h2>Jane Doe</h2>
-        <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>jane@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <h2>Amway VietNam Health</h2>
+        <p class="title">Health</p>
+        <p>Based on the amway website to look up and order amway products, in addition, there are additional work management, measuring health indicators such as BMI, TDEE and 2 entertaining mini games.</p>
+       
+        <p><a class="button" target="_blank" href="https://play.google.com/store/apps/details?id=vmh.project.amwaylite">Play game</a></p>
       </div>
     </div>
   </div>
 
   <div class="column">
     <div class="card">
-      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <img src="img/goldminer.png" alt="Mike" width="200" height="200" >
       <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>mike@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <h2>Gold Miner</h2>
+        <p class="title">Game</p>
+        <p>Use your claw and reel to mine gold and other treasures out of the earth. Your claw will swing back and forth. Tap screen to lower it</p>
+       
+        <p><a class="button" target="_blank" href="https://play.google.com/store/apps/details?id=vuminhhoang.project.goldminer">Play game</a></p>
       </div>
     </div>
   </div>
   
   <div class="column">
     <div class="card">
-      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+      <img src="img/candylove.png" alt="John" width="200" height="200" >
       <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>john@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <h2>Sweet Candy Love 2021</h2>
+        <p class="title">Game</p>
+        <p>Plan your moves by matching 3 or more candies in a row, using boosters wisely in order to overcome those extra sticky puzzles! Blast the candy love and collect sweet candy love across many of levels, guaranteed to have you craving more!</p>
+       
+        <p><a class="button" target="_blank" href="https://play.google.com/store/apps/details?id=vuminhhoang.project.sweetcandylove2021">Play game</a></p>
       </div>
     </div>
   </div>
